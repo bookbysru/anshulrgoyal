@@ -17,6 +17,7 @@ image: https://paper-attachments.dropbox.com/s_3C11437A61A671DE930509E35F223D4A5
 5. Conclusion
 
 <!--truncate-->
+### This article was published at [Log Rocket](https://blog.logrocket.com/rust-and-node-js-a-match-made-in-heaven/)
 
 Node.js is a very popular JavaScript runtime for writing backend applications. Its flexibility and nonblocking nature have made it the premier choice for API consumption.
 
