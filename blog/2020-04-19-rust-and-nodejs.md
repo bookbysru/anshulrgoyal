@@ -17,6 +17,7 @@ image: https://paper-attachments.dropbox.com/s_3C11437A61A671DE930509E35F223D4A5
 5. Conclusion
 
 <!--truncate-->
+
 ### This article was published at [Log Rocket](https://blog.logrocket.com/rust-and-node-js-a-match-made-in-heaven/)
 
 Node.js is a very popular JavaScript runtime for writing backend applications. Its flexibility and nonblocking nature have made it the premier choice for API consumption.
@@ -91,7 +92,7 @@ Create a directory named `rust-addon` and initialize a new npm project by runnin
     └── src
         └── lib.rs
 
-**Configuring Rust to compile to** **the a\*\***ddon\*\*
+**Configuring Rust to compile to the addon**
 
 We need Rust to compile to a dynamic C library or object. Configure cargo to compile to the `.so` file on Linux, `.dylib` on OS X, and `.dll` on Windows. Rust can produce many different types of libraries using Rustc flags or Cargo.
 
@@ -189,7 +190,7 @@ Now you know how to implement common patterns using N-API and Rust. A very commo
 
 You should use `napi_create_function` to create your functions so that you can use them from Node.js. You can add these functions as a property to exports to use from Node.js.
 
-**Creating a** **f\*\***unction\*\*
+**Creating a function**
 
 JavaScript functions are also represented by the `napi_value` pointer. A N-API function is pretty easy to create and use.
 
@@ -248,7 +249,7 @@ In the above example, we created a function in Rust named `say_hello`, which is 
 
 The function on the Rust side must have the same signature as shown in the example. We’ll discuss next how to access arguments inside a function using `napi_callback_info`. We can access this from a function and other arguments as well.
 
-**Accessing** **a\*\***rguments\*\*
+**Accessing** **arguments**
 
 Function arguments are very important. N-API provides a method to access these arguments. `napi_callback_info` provides the pointer with detailed information about the function in the JavaScript side of the code.
 
@@ -401,21 +402,22 @@ It’s not a good idea to block the main thread of Node.js for doing calculation
 
 First, create a promise. The promise will reject or resolve based on the success of your work. For this, you’ll need to create three functions. The first one is called from the JavaScript world and the control would be passed to the second function, which runs on libuv thread and has no access to JavaScript. The third function, which does have access to the JavaScript side, is called after the second finishes. You can use the `napi_create_async_work` method for the libuv thread.
 
-**Creating a** **p\*\***romise\*\*
+**Creating a promise**
 
 To create a promise, simply use `napi_create_promise`. This will provide a pointer, `napi_deferred`, which can then resolve or reject a promise using the following functions:
 
 - `napi_resolve_deferred`
 - `napi_reject_deferred`
 
-**Error** **h\*\***andling\*\*
+**Error handling**
 
 You can create and throw an error from the Rust code using `napi_create_error` and `napi_throw_error`. Every N-API function returns a `napi_status`, which should be checked.
 
-**Real** **c\*\***ode\*\*
+**Real code**
 
 The following example shows how to schedule async work.
 
+```rust
     use nodejs_sys::{
         napi_async_work, napi_callback_info, napi_create_async_work, napi_create_error,
         napi_create_function, napi_create_int64, napi_create_promise, napi_create_string_utf8,
@@ -547,14 +549,15 @@ The following example shows how to schedule async work.
         napi_set_named_property(env, exports, p.as_ptr(), local);
         exports
     }
+```
 
 We created a struct to store a pointer to our `napi_async_work` and `napi_deferred` as well as our output. Initially, the output is `None`. Then we created a promise, which provides a `deferred` that we save in our data. This data is available to us in all of our functions. Next, we converted our data into raw data and pass it to the `napi_create_async_work` function with other callbacks. We returned the promise we created, executed `perform`, and converted our data back to struct. Once `perform` is completed on libuv thread, `complete` is called from the main thread, along with the status of the previous operation and our data. Now we can reject or resolve our work and delete work from the queue.
 
-**Let\*\***’\***\*s** **w\*\***alk\*\* **t\*\***hrough the code\*\*
+**Lets walk through the code**
 
 Create a function called `feb`, which will be exported to JavaScript. This function will return a promise and schedule work for the libuv thread pool. You can achieve this by creating a promise, using `napi_create_async_work`, and passing two functions to it. One is executed on the libuv thread and the other on the main thread. Since you can only execute JavaScript from the main thread, you must resolve or reject a promise only from the main thread. The code includes a large number of unsafe functions.
 
-\***\*`**feb**` \*\*\*\***f\***\*unction**
+**`feb` function**
 
     pub unsafe extern "C" fn feb(env: napi_env, info: napi_callback_info) -> napi_value {
         let mut buffer: Vec<napi_value> = Vec::with_capacity(1);
@@ -614,7 +617,7 @@ Create a function called `feb`, which will be exported to JavaScript. This funct
         promise
     }
 
-`**perform**` **function**
+**`perform` function**
 
     pub unsafe extern "C" fn perform(_env: napi_env, data: *mut c_void) {
     // getting the shared data and converting the in box
@@ -632,7 +635,7 @@ Create a function called `feb`, which will be exported to JavaScript. This funct
         Box::into_raw(t);
     }
 
-`**complete**` **Function**
+**`complete` Function**
 
     pub unsafe extern "C" fn complete(env: napi_env, _status: napi_status, data: *mut c_void) {
     // getting the shared context

@@ -11,6 +11,7 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-alpha.39",
     "clsx": "^1.1.1",
     "prism-react-renderer": "^1.1.1",
     "react": "^16.8.4",

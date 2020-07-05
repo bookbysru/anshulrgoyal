@@ -7,6 +7,11 @@ module.exports = {
   organizationName: "anshulrgoyal", // Usually your GitHub org/user name.
   projectName: "anshulrgoyal", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: "light",
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
