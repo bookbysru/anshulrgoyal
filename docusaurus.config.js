@@ -7,6 +7,7 @@ module.exports = {
   organizationName: "anshulrgoyal", // Usually your GitHub org/user name.
   projectName: "anshulrgoyal", // Usually your repo name.
   themeConfig: {
+    image: "/img/anshul.jpg",
     colorMode: {
       defaultMode: "light",
       disableSwitch: false,
@@ -92,7 +93,6 @@ module.exports = {
           // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: "resume",
           routeBasePath: "/resume",
-         
         },
         blog: {
           showReadingTime: true,
