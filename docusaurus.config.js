@@ -83,6 +83,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Anshul Goyal. Built with Docusaurus.`,
     },
   },
+  themes: ["@docusaurus/theme-live-codeblock"],
   presets: [
     [
       "@docusaurus/preset-classic",
