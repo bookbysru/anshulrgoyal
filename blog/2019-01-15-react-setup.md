@@ -4,7 +4,7 @@ id: react-setup
 author: Anshul Goyal
 author_url: https://github.com/anshulrgoyal
 author_image_url: /img/anshul.jpg
-tags: [jwt, auth, nodejs, express]
+tags: [react,webpack,babel]
 image: https://cdn-images-1.medium.com/max/2400/1*c5BkVEjwpew7yjKixdIdYQ.png
 ---
 

@@ -75,7 +75,7 @@ function Home() {
               )}
               to={useBaseUrl("resume/")}
             >
-              Know about me
+              Read More
             </Link>
           </div>
         </div>

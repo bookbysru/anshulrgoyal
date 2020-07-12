@@ -29,3 +29,5 @@ I scored 9.4 CGPA in 10th grade in the CBSE Board examination.
 # Professional experience
 
 ## MLH Fellows
+_June 2020 - August 2020_
+
