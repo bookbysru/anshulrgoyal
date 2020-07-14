@@ -1,8 +1,8 @@
 module.exports = {
   title: "Anshul Goyal",
   tagline: "Open source contributor, Writer, Web developer, Anime lover",
-  url: process.env.URL,
-  baseUrl: "/",
+  url: process.env.URL || "http://localhost:3000",
+  baseUrl: process.env.BASE_URL || "/",
   favicon: "",
   organizationName: "anshulrgoyal", // Usually your GitHub org/user name.
   projectName: "anshulrgoyal", // Usually your repo name.
