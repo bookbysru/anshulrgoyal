@@ -1,0 +1,16 @@
+
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+variables:
+  URL: "http://localhoost:3000"
+
+
+test_async:
+  script:
+    - npm i
+    - npm run build
+
