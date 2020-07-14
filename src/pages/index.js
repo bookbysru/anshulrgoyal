@@ -13,7 +13,7 @@ const features = [
     description: (
       <>
         I regularly contribute to opensource. I maintain imageflow-node an
-        opensource image manipulation library in nodejs.
+        opensource image manipulation library for nodejs.
       </>
     ),
   },
