@@ -1,6 +1,6 @@
 module.exports = {
   title: "Anshul Goyal",
-  tagline: "Open source contributor, Writer, Web developer, anime lover",
+  tagline: "Open source contributor, Writer, Web developer, Anime lover",
   url: process.env.URL,
   baseUrl: "/",
   favicon: "",
@@ -9,7 +9,7 @@ module.exports = {
   themeConfig: {
     image: "/img/anshul.jpg",
     colorMode: {
-      defaultMode: "light",
+      defaultMode: "dark",
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
@@ -100,7 +100,6 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
           routeBasePath: "/",
         },
         blog: {
