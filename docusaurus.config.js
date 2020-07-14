@@ -26,6 +26,12 @@ module.exports = {
           label: "Resume",
           position: "left",
         },
+        {
+          to: "projects",
+          activeBasePath: "projects",
+          label: "Conributions",
+          position: "right",
+        },
         { to: "blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/anshulrgoyal",
@@ -43,6 +49,10 @@ module.exports = {
             {
               label: "Resume",
               to: "resume/",
+            },
+            {
+              label: "Contributions",
+              to: "projects/",
             },
           ],
         },
@@ -91,8 +101,7 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: "resume",
-          routeBasePath: "/resume",
+          routeBasePath: "/",
         },
         blog: {
           showReadingTime: true,

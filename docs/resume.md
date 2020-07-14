@@ -29,5 +29,19 @@ I scored 9.4 CGPA in 10th grade in the CBSE Board examination.
 # Professional experience
 
 ## MLH Fellows
+
 _June 2020 - August 2020_
 
+As part of the inaugural class of MLH Fellows, I contributed to Open Source projects with a team of Fellows under the educational mentorship of a professional software engineer. My team was responsible for [Prism](https://github.com/oviohub/prism-frontend), [Docusaurus](https://github.com/facebook/docusaurus/) and [Next.js](https://github.com/vercel/next.js). I mainly worked on Docusaurus. Docusaurus is a static documentation website generator based on React.js, MDX, and webpacks.
+
+## Cashpositive
+
+_August 2018 - August 2019_
+
+I worked with a team of highly skilled developers to create a platform to facilitate the credit management system for MSMEs and NBFCs.The platform used Node.js, Typescript, React.js, React Native, and PostgreSQL. I was involved in designing backend, database architecture, and customer integration.
+
+## Venture Sky
+
+_June 2018 - August 2018_
+
+Venture Sky is a small community helping students convert ideas into startups. I worked as an advisory on for incubated startups. I worked on Zalonin, a grooming service aggregator.
