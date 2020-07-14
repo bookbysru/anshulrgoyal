@@ -6,7 +6,7 @@ cache:
 
 variables:
   URL: "https://argoyal.gitlab.io"
-  BASE_URL: "/anshulrgoyal/"
+  BASE_URL: "/anshulrgoyal"
 
 
 test_async:
