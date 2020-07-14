@@ -18,11 +18,12 @@ pages:
   script:
     - yarn install
     - yarn build
-    - mv ./build ../public
+    - mv ./docusaurus/build ../public
   artifacts:
     paths:
       - public
   only:
     - master
+
 
 
