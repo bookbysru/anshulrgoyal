@@ -18,7 +18,7 @@ const features = [
     ),
   },
   {
-    title: <>Love to write</>,
+    title: <>Writer</>,
     imageUrl: "img/blogger.svg",
     description: (
       <>
@@ -59,10 +59,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="A coder for fun :)"
-    >
+    <Layout title={`${siteConfig.title}`} description="A coder for fun :)">
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
