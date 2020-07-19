@@ -4,7 +4,6 @@ title: Resume
 ---
 
 Hi, you! My name is Anshul Goyal. I am a tech enthusiast for the past few years and pass my time using tech to solve problems. I love to code and enjoy watching anime. I can write code in many languages and use well-established frameworks in these languages. I am also a fan of Open source and have been contributing to a few projects. I also lead a Hack club at my college. Along with that I have also served as Secretary for tech club related to Programing and Gaming in my University. I specialize in the Node.js and React.js ecosystem.
-[]().[]().[]().[]()
 
 # Education
 
