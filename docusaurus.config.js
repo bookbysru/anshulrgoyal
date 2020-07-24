@@ -3,11 +3,15 @@ module.exports = {
   tagline: "Open source contributor, Writer, Web developer, Anime lover",
   url: process.env.URL || "http://localhost:3000",
   baseUrl: process.env.BASE_URL || "/",
-  favicon: "",
+  favicon: "/img/anshul.jpg",
   organizationName: "anshulrgoyal", // Usually your GitHub org/user name.
   projectName: "anshulrgoyal", // Usually your repo name.
   themeConfig: {
     image: "/img/anshul.jpg",
+    announcementBar: {
+      id: "supportus",
+      content: "I am looking for a JOB.",
+    },
     colorMode: {
       defaultMode: "dark",
       disableSwitch: false,
@@ -19,7 +23,7 @@ module.exports = {
     },
     navbar: {
       title: "Anshul Goyal",
-      links: [
+      items: [
         {
           to: "resume",
           activeBasePath: "resume",
@@ -27,8 +31,8 @@ module.exports = {
           position: "left",
         },
         {
-          to: "projects",
-          activeBasePath: "projects",
+          to: "resume/projects",
+          activeBasePath: "resume/projects",
           label: "Conributions",
           position: "right",
         },
@@ -52,7 +56,7 @@ module.exports = {
             },
             {
               label: "Contributions",
-              to: "projects/",
+              to: "resume/projects/",
             },
           ],
         },
@@ -100,7 +104,9 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          routeBasePath: "/",
+          routeBasePath: "/resume",
+          homePageId: "resume",
+          path: "docs",
         },
         blog: {
           showReadingTime: true,

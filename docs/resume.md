@@ -44,3 +44,7 @@ I worked with a team of highly skilled developers to create a platform to facili
 _June 2018 - August 2018_
 
 Venture Sky is a small community helping students convert ideas into startups. I worked as an advisory on for incubated startups. I worked on Zalonin, a grooming service aggregator.
+
+# Contact
+
+Email: <a href="mailto://anshul@anshulgoyal.dev">anshul@anshulgoyal.dev</a>
