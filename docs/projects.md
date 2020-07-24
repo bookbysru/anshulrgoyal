@@ -5,7 +5,7 @@ title: Contributions and Projects
 
 ## Docusaurus
 
-[Docusaurus](docusaurus.io) is an open-source documentation website generation. I contributing docusaurus by creating tools to migrate docusaurus version 1 to version 2. I also updated CLI for better user experience and creating a design for option and config validation provided to plugin and themes.
+[Docusaurus](https://docusaurus.io) is an open-source documentation website generation. I contributing docusaurus by creating tools to migrate docusaurus version 1 to version 2. I also updated CLI for better user experience and creating a design for option and config validation provided to plugin and themes.
 
 ## Imageflow
 
