@@ -31,8 +31,8 @@ module.exports = {
           position: "left",
         },
         {
-          to: "resume/projects",
-          activeBasePath: "resume/projects",
+          to: "projects",
+          activeBasePath: "projects",
           label: "Conributions",
           position: "right",
         },
@@ -52,11 +52,11 @@ module.exports = {
           items: [
             {
               label: "Resume",
-              to: "resume/",
+              to: "resume",
             },
             {
               label: "Contributions",
-              to: "resume/projects/",
+              to: "projects",
             },
           ],
         },
@@ -104,9 +104,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         docs: {
-          routeBasePath: "/resume",
-          homePageId: "resume",
-          path: "docs",
+          routeBasePath: "/",
         },
         blog: {
           showReadingTime: true,
