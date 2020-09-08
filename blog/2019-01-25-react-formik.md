@@ -1,6 +1,6 @@
 ---
 title: Creating Forms In React With Formik And Yup
-id: react-formik
+slug: react-formik
 author: Anshul Goyal
 author_url: https://github.com/anshulrgoyal
 author_image_url: /img/anshul.jpg

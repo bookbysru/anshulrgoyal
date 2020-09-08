@@ -1,5 +1,5 @@
 ---
-id: easy-documentation-docusaurus
+slug: easy-documentation-docusaurus
 title: "Easy Documentation using Docusaurus"
 author: Anshul Goyal
 author_url: https://github.com/anshulrgoyal

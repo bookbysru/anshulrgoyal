@@ -1,5 +1,5 @@
 ---
-id: nodejs-rust-match
+slug: nodejs-rust-match
 title: "Rust and Node.js: A match made in heaven"
 author: Anshul Goyal
 author_url: https://github.com/anshulrgoyal

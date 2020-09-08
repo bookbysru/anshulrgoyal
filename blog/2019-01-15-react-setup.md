@@ -1,6 +1,6 @@
 ---
 title: Setting A React Project From Scratch Using Babel And Webpack
-id: react-setup
+slug: react-setup
 author: Anshul Goyal
 author_url: https://github.com/anshulrgoyal
 author_image_url: /img/anshul.jpg

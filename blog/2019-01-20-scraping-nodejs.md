@@ -1,6 +1,6 @@
 ---
 title: Scraping with NodeJS and Cheerio
-id: scrapping-nodejs
+slug: scrapping-nodejs
 author: Anshul Goyal
 author_url: https://github.com/anshulrgoyal
 author_image_url: /img/anshul.jpg
